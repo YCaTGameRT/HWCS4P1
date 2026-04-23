@@ -9,7 +9,11 @@ namespace HWCS4 {
         List<GeometricFigure> figures = new List<GeometricFigure>();
 
         public double Area() {
-            return ;
+            double totalArea = 0;
+            foreach (GeometricFigure item in figures) {
+                totalArea += item.FigureArea();
+            }
+            return totalArea;
         }
     }
 }
